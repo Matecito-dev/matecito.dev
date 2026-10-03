@@ -8,27 +8,27 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <p className="text-2xl font-semibold tracking-tight text-ink">
-              matecito<span className="text-accent">.dev</span>
+              Matecito<span className="ml-1 text-sm font-medium text-accent">.dev</span>
             </p>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-muted">
-              Studio digital desde Pergamino, Argentina. Comunidades, juegos, productos y servicios web.
+              Creamos, lanzamos y hacemos crecer servicios, productos y proyectos desde Pergamino, Argentina.
             </p>
           </div>
 
           <div>
-            <p className="section-label mb-4">Navegar</p>
+            <p className="section-label mb-4">Áreas</p>
             <ul className="space-y-2 text-sm font-medium text-ink-muted">
-              <li><Link href="/landing-pages" className="hover:text-accent">Landing pages</Link></li>
+              <li><Link href="/studio" className="hover:text-accent">Studio</Link></li>
+              <li><Link href="/commerce" className="hover:text-accent">Commerce</Link></li>
               <li><Link href="/proyectos" className="hover:text-accent">Proyectos</Link></li>
-              <li><Link href="/labs" className="hover:text-accent">Labs</Link></li>
-              <li><Link href="/privacidad" className="hover:text-accent">Privacidad</Link></li>
+              <li><Link href="/landing-pages" className="hover:text-accent">Landing pages</Link></li>
             </ul>
           </div>
 
           <div>
-            <p className="section-label mb-4">Estudio</p>
+            <p className="section-label mb-4">Matecito</p>
             <p className="max-w-xs text-sm leading-relaxed text-ink-muted">
-              Desarrollo digital y trabajo en público desde Pergamino, Argentina.
+              Una marca independiente con base en Pergamino, Buenos Aires.
             </p>
             <a
               href="https://github.com/Matecito-dev"
@@ -52,14 +52,17 @@ export function Footer() {
               <br />
               <span className="font-mono text-xs font-normal text-ink-faint">+54 2477 699586</span>
             </a>
+            <Link href="/privacidad" className="mt-3 block text-sm text-ink-muted hover:text-accent">
+              Privacidad
+            </Link>
           </div>
         </div>
 
         <hr className="rule my-8" />
 
         <div className="flex flex-col gap-2 text-xs text-ink-faint sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} matecito.dev</span>
-          <span className="font-mono">Hecho con mate 🧉 · build in public</span>
+          <span>© {new Date().getFullYear()} Matecito · matecito.dev</span>
+          <span className="font-mono">Hecho con mate 🧉 desde Pergamino</span>
         </div>
       </div>
     </footer>

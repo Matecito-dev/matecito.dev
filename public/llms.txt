@@ -1,23 +1,25 @@
-# Matecito.dev
+# Matecito
 
-> Diseño y desarrollo de landing pages profesionales desde Pergamino, Argentina.
+> Creamos. Lanzamos. Hacemos crecer. Servicios, productos y proyectos desde Pergamino, Argentina.
 
-Matecito.dev crea landing pages rápidas, responsive y orientadas a generar consultas. La oferta principal comienza en $50.000 ARS e incluye diseño personalizado, estructura de contenido, SEO base, integración con WhatsApp y publicación en Vercel.
+Matecito es una marca independiente con tres áreas: Studio, Commerce y Proyectos. El dominio del sitio es matecito.dev.
 
-## Páginas principales
+## Áreas y páginas
 
-- [Inicio](https://matecito.dev/): Presentación del studio y sus servicios
+- [Inicio](https://matecito.dev/): Presentación de Matecito y sus tres áreas
+- [Studio](https://matecito.dev/studio): Servicios digitales para profesionales, comercios y emprendimientos
 - [Landing pages](https://matecito.dev/landing-pages): Oferta, precio, alcance y preguntas frecuentes
-- [Proyectos](https://matecito.dev/proyectos): Espacio temporal para próximas novedades
-- [Labs](https://matecito.dev/labs): Bitácora de experimentos e infraestructura
-- [Privacidad](https://matecito.dev/privacidad): Políticas de privacidad
+- [Commerce](https://matecito.dev/commerce): Área en preparación; aún no tiene catálogo público
+- [Proyectos propios](https://matecito.dev/proyectos): Proyectos creados en Matecito, hoy Zezen
+- [Privacidad](https://matecito.dev/privacidad): Políticas de privacidad de las aplicaciones
 
-## Otros servicios
+## Studio
 
-- Marketing digital
-- Campañas publicitarias
-- SEO y contenidos
-- Automatizaciones
+Diseño y desarrollo web, marketing digital, campañas, SEO y contenidos, y automatizaciones. La oferta detallada de landing pages comienza en $50.000 ARS e incluye diseño personalizado, estructura de contenido, SEO base, integración con WhatsApp y publicación.
+
+## Proyectos propios
+
+- **Zezen**: plataforma de entrenamiento para organizar rutinas, registrar actividad y seguir el progreso, solo o junto a un gimnasio. [Conocer Zezen](https://www.zezen.app)
 
 ## Contacto
 
@@ -26,4 +28,4 @@ Matecito.dev crea landing pages rápidas, responsive y orientadas a generar cons
 
 ## Documentación extendida
 
-- [llms-full.txt](https://matecito.dev/llms-full.txt): Contexto ampliado del studio y sus servicios
+- [llms-full.txt](https://matecito.dev/llms-full.txt): Contexto ampliado sobre la marca y el sitio

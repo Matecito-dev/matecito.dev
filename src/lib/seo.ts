@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://matecito.dev";
-export const SITE_NAME = "Matecito.dev";
+export const SITE_NAME = "Matecito";
 
 export const DEFAULT_DESCRIPTION =
-  "Studio digital desde Pergamino, Argentina. Comunidades, videojuegos, productos digitales y landing pages construidos con proceso visible.";
+  "Creamos, lanzamos y hacemos crecer servicios, productos y proyectos desde Pergamino, Argentina. Conocé Matecito Studio, Commerce y sus proyectos propios.";
 
 export const OG_IMAGE = {
   url: "/banner/bannerfb.png",
   width: 1200,
   height: 630,
-  alt: "Matecito.dev — Studio digital desde Argentina",
+  alt: "Matecito — Creamos. Lanzamos. Hacemos crecer.",
 };
 
 export function pageMetadata({
@@ -27,7 +27,7 @@ export function pageMetadata({
   ogImage?: typeof OG_IMAGE;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
-  const ogTitle = absoluteTitle ?? (title ? `${title} — matecito.dev` : SITE_NAME);
+  const ogTitle = absoluteTitle ?? (title ? `${title} — Matecito` : SITE_NAME);
 
   return {
     title: absoluteTitle ? { absolute: absoluteTitle } : title,

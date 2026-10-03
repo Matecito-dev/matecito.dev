@@ -1,102 +1,54 @@
-export type ProjectStatus = "live" | "wip";
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  caption: string;
+}
 
 export interface Project {
   id: string;
   title: string;
-  tag: string;
-  year: string;
   description: string;
-  href: string | null;
-  external?: boolean;
-  status: ProjectStatus;
-  image?: string | null;
-  emoji: string;
-  tint: string;
+  href: string;
+  category: string;
+  wordmark: string;
+  images: ProjectImage[];
 }
 
 export const WHATSAPP_NUMBER = "542477699586";
 
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  "Hola, quiero contactar con matecito.dev"
+  "Hola, quiero contactar con Matecito"
 )}`;
 
 export const LANDING_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Hola, quiero consultar por la landing page de $50.000 ARS"
 )}`;
 
-// Archived while the public portfolio is paused; kept for the next site iteration.
 export const PROJECTS: Project[] = [
   {
-    id: "recienllegue",
-    title: "Recién Llegué",
-    tag: "Plataforma local",
-    year: "2025",
+    id: "zezen",
+    title: "Zezen",
     description:
-      "Ayudamos a adaptarse a nuevas ciudades con recursos, comunidad y orientación local en Pergamino y más.",
-    href: "https://recienllegue.com",
-    external: true,
-    status: "live",
-    image: "/projects/recienllegue.png",
-    emoji: "🌎",
-    tint: "#e8f2ef",
-  },
-  {
-    id: "zerolag",
-    title: "ZeroLagARG",
-    tag: "Gaming hub",
-    year: "2026",
-    description:
-      "Comunidad gaming argentina: servidores de Minecraft y MU Online, foro y eventos.",
-    href: null,
-    status: "wip",
-    image: null,
-    emoji: "🎮",
-    tint: "#f0ebe3",
-  },
-  {
-    id: "etheria",
-    title: "Conquest of Etheria",
-    tag: "Estrategia",
-    year: "2026",
-    description:
-      "Juego de estrategia medieval con mapa mundial, facciones y economía en tiempo real.",
-    href: null,
-    status: "wip",
-    image: null,
-    emoji: "⚔️",
-    tint: "#eeeaf4",
-  },
-  {
-    id: "labs",
-    title: "Labs",
-    tag: "Experimentos",
-    year: "2026",
-    description: "IA, DevOps, scripts y prototipos abiertos antes de convertirse en producto.",
-    href: "/labs",
-    status: "wip",
-    image: null,
-    emoji: "🧪",
-    tint: "#f4ebe8",
-  },
-];
-
-export const LAB_NOTES = [
-  {
-    date: "Jun 2026",
-    title: "Infra unificada en VPS",
-    body: "Migración a un solo servidor con Caddy, systemd y despliegues por proyecto.",
-    tag: "DevOps",
-  },
-  {
-    date: "Abr 2026",
-    title: "Agentes y automatización",
-    body: "Flujos con LLMs para ops, documentación y tareas repetitivas del studio.",
-    tag: "IA",
-  },
-  {
-    date: "Próximo",
-    title: "Devlogs públicos",
-    body: "Bitácora semanal con decisiones, errores y métricas de cada proyecto.",
-    tag: "Proceso",
+      "Una plataforma de entrenamiento para organizar rutinas, registrar actividad y seguir tu progreso, solo o junto a tu gimnasio.",
+    href: "https://www.zezen.app",
+    category: "Producto digital · Fitness",
+    wordmark: "/proyectos/zezen/zezen-wordmark.png",
+    images: [
+      {
+        src: "/proyectos/zezen/daily-home.webp",
+        alt: "Pantalla de inicio de Zezen con rutinas, actividad y progreso semanal",
+        caption: "Tu espacio para entrenar a tu ritmo.",
+      },
+      {
+        src: "/proyectos/zezen/weekly-progress.webp",
+        alt: "Resumen semanal de entrenamientos, ejercicios y nuevos récords en Zezen",
+        caption: "Tu semana, de un vistazo.",
+      },
+      {
+        src: "/proyectos/zezen/quick-actions.webp",
+        alt: "Acciones rápidas de Zezen para elegir una rutina, registrar actividad o buscar un gimnasio",
+        caption: "Elegí cómo querés moverte.",
+      },
+    ],
   },
 ];

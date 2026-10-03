@@ -8,7 +8,7 @@ const organization = {
   url: SITE_URL,
   logo: `${SITE_URL}/logos/matecitologo.png`,
   description:
-    "Studio digital desde Pergamino, Argentina. Diseño web, soluciones digitales y experimentación en público.",
+    "Marca independiente desde Pergamino, Argentina. Creamos, lanzamos y hacemos crecer servicios, productos y proyectos.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Pergamino",
@@ -31,7 +31,7 @@ const website = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Studio digital desde Argentina: diseño web, soluciones digitales y experimentación en público.",
+    "Creamos, lanzamos y hacemos crecer servicios, productos y proyectos desde Pergamino, Argentina.",
   inLanguage: "es-AR",
   publisher: {
     "@type": "Organization",

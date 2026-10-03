@@ -1,6 +1,7 @@
-# matecito.dev
+# Matecito
 
-Sitio comercial de **Matecito.dev** — landing pages profesionales y soluciones digitales desde Pergamino, Argentina.
+Sitio de **Matecito**, una marca independiente que crea, lanza y hace crecer servicios,
+productos y proyectos desde Pergamino, Argentina. El sitio vive en `matecito.dev`.
 
 ## Stack
 
@@ -21,11 +22,14 @@ Abrí [http://localhost:3000](http://localhost:3000).
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Home del studio, servicios y forma de trabajo |
-| `/landing-pages` | Servicio de landing pages desde $50.000 ARS |
-| `/proyectos` | Espacio temporal para próximas novedades |
-| `/labs` | Bitácora de experimentos |
-| `/privacidad` | Políticas de privacidad |
+| `/` | Marca Matecito y sus áreas Studio, Commerce y Proyectos |
+| `/studio` | Resumen de servicios digitales |
+| `/landing-pages` | Servicio, precio, alcance y preguntas frecuentes |
+| `/commerce` | Presentación del área, en preparación |
+| `/proyectos` | Proyectos propios de Matecito, hoy Zezen |
+| `/privacidad` | Políticas de privacidad de las aplicaciones |
+
+La ruta anterior `/labs` redirige a la portada.
 
 ## Deploy
 

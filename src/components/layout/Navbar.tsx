@@ -7,25 +7,28 @@ import { cn } from "@/lib/utils";
 import { WHATSAPP_URL } from "@/lib/content";
 
 const LINKS = [
-  { href: "/", label: "Inicio" },
-  { href: "/landing-pages", label: "Landing pages" },
+  { href: "/studio", label: "Studio" },
+  { href: "/commerce", label: "Commerce" },
   { href: "/proyectos", label: "Proyectos" },
-  { href: "/labs", label: "Labs" },
 ];
 
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  const active = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const active = (href: string) => {
+    if (href === "/studio") {
+      return pathname.startsWith("/studio") || pathname.startsWith("/landing-pages");
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="page-wrap flex min-h-[4.5rem] items-center justify-between">
         <Link href="/" className="flex items-baseline gap-0">
-          <span className="text-lg font-bold tracking-tight text-ink">matecito</span>
-          <span className="text-lg font-bold tracking-tight text-accent">.dev</span>
+          <span className="text-lg font-bold tracking-tight text-ink">Matecito</span>
+          <span className="ml-1 text-xs font-semibold tracking-tight text-accent">.dev</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -91,7 +94,7 @@ export function Navbar() {
             onClick={() => setOpen(false)}
             className="btn-whatsapp mt-4 w-full justify-center"
           >
-            Contacto por WhatsApp
+            Contactar a Matecito
           </a>
         </nav>
       )}

@@ -17,7 +17,7 @@ import { LANDING_WHATSAPP_URL } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  absoluteTitle: "Landing pages desde $50.000 ARS | Matecito.dev",
+  absoluteTitle: "Landing pages desde $50.000 ARS | Matecito Studio",
   description:
     "Diseño y desarrollo de landing pages profesionales desde $50.000 ARS. Sitios rápidos, responsive, con SEO base y contacto directo por WhatsApp.",
   path: "/landing-pages",
@@ -25,7 +25,7 @@ export const metadata: Metadata = pageMetadata({
     url: "/landing-pages/opengraph-image",
     width: 1200,
     height: 630,
-    alt: "Landing pages profesionales desde $50.000 ARS — Matecito.dev",
+    alt: "Landing pages profesionales desde $50.000 ARS — Matecito Studio",
   },
 });
 
@@ -37,7 +37,7 @@ const SERVICE_JSON_LD = {
     "Landing page responsive con diseño personalizado, SEO base, integración con WhatsApp y publicación en Vercel.",
   provider: {
     "@type": "Organization",
-    name: "Matecito.dev",
+    name: "Matecito",
     url: "https://matecito.dev",
   },
   areaServed: { "@type": "Country", name: "Argentina" },

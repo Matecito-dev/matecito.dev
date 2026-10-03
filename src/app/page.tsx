@@ -1,25 +1,47 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Check, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Code2, MapPin, Rocket, ShoppingBag } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  absoluteTitle: "Matecito.dev — Studio digital desde Argentina",
+  absoluteTitle: "Matecito — Creamos. Lanzamos. Hacemos crecer.",
   description:
-    "Comunidades, videojuegos, productos digitales y landing pages construidos desde Pergamino, Argentina.",
+    "Servicios, productos y proyectos creados desde Pergamino, Argentina. Conocé Matecito Studio, Commerce y sus proyectos propios.",
   path: "/",
 });
 
-const SERVICE_FEATURES = [
-  "Diseño a medida",
-  "WhatsApp integrado",
-  "Publicación incluida",
-];
-
-const STUDIO_STEPS = [
-  { number: "01", title: "Entender", body: "Partimos de una necesidad concreta." },
-  { number: "02", title: "Construir", body: "Diseñamos y desarrollamos con intención." },
-  { number: "03", title: "Aprender", body: "Compartimos el proceso y mejoramos." },
+const AREAS = [
+  {
+    number: "01",
+    name: "Studio",
+    eyebrow: "Servicios digitales",
+    description:
+      "Diseño y desarrollo web, marketing digital y automatizaciones para negocios que quieren crecer.",
+    href: "/studio",
+    action: "Conocer Studio",
+    icon: Code2,
+  },
+  {
+    number: "02",
+    name: "Commerce",
+    eyebrow: "Productos y comercio",
+    description:
+      "Una nueva área para explorar productos físicos y comercio online.",
+    href: "/commerce",
+    action: "Ver qué estamos preparando",
+    status: "En preparación",
+    icon: ShoppingBag,
+  },
+  {
+    number: "03",
+    name: "Proyectos",
+    eyebrow: "Proyectos propios",
+    description:
+      "Productos e ideas que desarrollamos desde Matecito. Hoy, conocé Zezen.",
+    href: "/proyectos",
+    action: "Ver los proyectos",
+    icon: Rocket,
+  },
 ];
 
 export default function Home() {
@@ -30,41 +52,52 @@ export default function Home() {
           <div className="reveal">
             <p className="section-label mb-6 flex items-center gap-3 text-accent">
               <span className="h-2 w-2 bg-accent" aria-hidden="true" />
-              Studio digital · Pergamino, Argentina
+              Matecito · Pergamino, Argentina
             </p>
-            <h1 className="max-w-3xl text-[clamp(3.25rem,8vw,6.75rem)] font-semibold leading-[0.92] tracking-[-0.065em] text-ink">
-              Construimos
+            <h1 className="max-w-3xl text-[clamp(2.75rem,6.25vw,5rem)] font-semibold leading-[0.98] tracking-[-0.065em] text-ink">
+              Creamos.
               <br />
-              <span className="text-accent">en público.</span>
+              <span className="text-accent">Lanzamos.</span>
+              <br />
+              <span className="whitespace-nowrap">Hacemos crecer.</span>
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl">
-              Creamos plataformas, comunidades y juegos desde Pergamino. Ideas reales,
-              trabajo visible y productos que crecen con su gente.
+              Software, marcas, ecommerce y productos nacidos desde nuestro estudio en
+              Argentina. Tres áreas, una misma curiosidad por hacer que las ideas avancen.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Link href="/landing-pages" className="btn-primary">
-                Conocer el servicio
+              <Link href="#areas" className="btn-primary">
+                Explorar Matecito
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
-              <Link href="/labs" className="btn-ghost">
-                Ver cómo trabajamos
+              <Link href="/studio" className="btn-ghost">
+                Hablemos de tu proyecto
+                <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-          <aside className="reveal reveal-delay-1 border-l-2 border-accent pl-6 md:ml-8 md:pl-8" aria-label="Cómo trabaja el estudio">
+          <aside
+            className="reveal reveal-delay-1 border-l-2 border-accent pl-6 md:ml-8 md:pl-8"
+            aria-label="Las áreas de Matecito"
+          >
             <div className="mb-5 flex items-center justify-between gap-4">
-              <p className="section-label text-ink">Cómo construimos</p>
+              <p className="section-label text-ink">Una marca, tres áreas</p>
               <span className="font-mono text-xs text-ink-faint">01—03</span>
             </div>
             <ul className="divide-y divide-line border-y border-line">
-              {STUDIO_STEPS.map((step) => (
-                <li key={step.number} className="flex items-start gap-4 py-4">
-                  <span className="pt-0.5 font-mono text-xs text-accent">{step.number}</span>
+              {AREAS.map((area) => (
+                <li key={area.number} className="flex items-start gap-4 py-4">
+                  <span className="pt-0.5 font-mono text-xs text-accent">{area.number}</span>
                   <div className="min-w-0 flex-1">
-                    <p className="font-semibold tracking-tight text-ink">{step.title}</p>
-                    <p className="mt-0.5 text-sm text-ink-muted">{step.body}</p>
+                    <p className="font-semibold tracking-tight text-ink">{area.name}</p>
+                    <p className="mt-0.5 text-sm text-ink-muted">{area.eyebrow}</p>
                   </div>
+                  {area.status && (
+                    <span className="shrink-0 font-mono text-[10px] uppercase tracking-wider text-ink-faint">
+                      {area.status}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -76,83 +109,73 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-label="Sobre el estudio" className="border-b border-line bg-paper-warm">
-        <div className="page-wrap grid gap-5 py-6 sm:grid-cols-3 sm:gap-8">
-          {[
-            { label: "Qué hacemos", value: "Productos digitales" },
-            { label: "Dónde", value: "Pergamino, Argentina" },
-            { label: "Cómo", value: "En público, paso a paso" },
-          ].map((item, index) => (
-            <div
-              key={item.label}
-              className={`flex items-baseline justify-between gap-4 sm:block ${index > 0 ? "sm:border-l sm:border-line sm:pl-8" : ""}`}
-            >
-              <p className="section-label text-[0.625rem]">{item.label}</p>
-              <p className="text-sm font-medium text-ink sm:mt-1">{item.value}</p>
+      <section id="areas" className="scroll-mt-20 border-b border-line bg-paper-warm py-16 md:py-24">
+        <div className="page-wrap">
+          <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="section-label mb-4 text-accent">Lo que hacemos</p>
+              <h2 className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
+                Diferentes caminos.
+                <br />
+                Una misma casa.
+              </h2>
             </div>
-          ))}
+            <p className="max-w-md text-base leading-relaxed text-ink-muted">
+              Matecito reúne servicios, productos y proyectos propios para convertir ideas
+              en algo que la gente pueda usar y disfrutar.
+            </p>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {AREAS.map((area) => {
+              const Icon = area.icon;
+              return (
+                <Link
+                  key={area.number}
+                  href={area.href}
+                  className="group flex min-h-72 flex-col border border-line bg-surface p-6 transition-colors hover:border-accent md:p-7"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <span className="bg-accent-soft p-3 text-accent">
+                      <Icon className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    <span className="font-mono text-xs text-ink-faint">{area.number}</span>
+                  </div>
+                  <p className="section-label mt-8">{area.eyebrow}</p>
+                  <div className="mt-2 flex items-center justify-between gap-3">
+                    <h3 className="text-2xl font-semibold tracking-tight text-ink">{area.name}</h3>
+                    {area.status && (
+                      <span className="border border-line px-2 py-1 font-mono text-[9px] uppercase tracking-wider text-ink-faint">
+                        {area.status}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
+                    {area.description}
+                  </p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                    {area.action}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      <section className="border-b border-line bg-surface" aria-labelledby="service-title">
-        <div className="page-wrap grid gap-10 py-16 md:grid-cols-[1fr_0.72fr] md:items-center md:py-24">
+      <section className="bg-surface py-14 md:py-20">
+        <div className="page-wrap flex flex-col gap-5 border-l-2 border-accent pl-6 md:flex-row md:items-center md:justify-between md:pl-8">
           <div>
-            <p className="section-label mb-4 text-accent">01 / Servicio web</p>
-            <h2 id="service-title" className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
-              Tu negocio merece una web que trabaje por él.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-muted md:text-lg">
-              Diseñamos landing pages rápidas y claras para profesionales, comercios y
-              emprendimientos. Enfocadas en contar lo importante y generar consultas.
-            </p>
-          </div>
-
-          <div className="border-l-2 border-accent pl-6 md:ml-8 md:pl-8">
-            <p className="section-label">Precio de lanzamiento</p>
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-ink md:text-5xl">
-              $50.000 <span className="font-mono text-sm font-normal text-ink-muted">ARS</span>
-            </p>
-            <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink-muted">
-              {SERVICE_FEATURES.map((feature) => (
-                <li key={feature} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-accent" strokeWidth={2.5} aria-hidden="true" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <Link href="/landing-pages" className="btn-primary mt-6">
-              Conocer el servicio
-              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-line bg-paper-warm" aria-labelledby="process-title">
-        <div className="page-wrap grid gap-8 py-16 md:grid-cols-[0.85fr_1.15fr] md:items-start md:py-24">
-          <div>
-            <p className="section-label mb-4 text-accent">02 / El proceso</p>
-            <h2 id="process-title" className="max-w-lg text-3xl font-semibold leading-tight tracking-tight text-ink md:text-5xl">
-              Sin humo.
-              <br />
-              Con proceso visible.
+            <p className="section-label mb-3 text-accent">Desde Pergamino para donde haga falta</p>
+            <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">
+              Ideas que se convierten en proyectos reales.
             </h2>
           </div>
-          <div className="max-w-2xl text-base leading-relaxed text-ink-muted md:pt-9 md:text-lg">
-            <p>
-              Cada proyecto nace de una necesidad real: una ciudad, una comunidad de
-              jugadores, un mundo por conquistar. Compartimos decisiones, errores y avances
-              mientras construimos.
-            </p>
-            <p className="mt-5">
-              Labs es nuestro taller: probamos ideas y herramientas antes de convertirlas
-              en productos.
-            </p>
-            <Link href="/labs" className="btn-ghost mt-7">
-              Entrar a Labs
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
+          <Link href="/studio" className="btn-ghost w-fit">
+            Empezar una conversación
+            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
         </div>
       </section>
     </>

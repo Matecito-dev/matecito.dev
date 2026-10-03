@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Privacidad",
   description:
-    "Política de privacidad de las aplicaciones del ecosistema Matecito.dev.",
+    "Política de privacidad de las aplicaciones y proyectos de Matecito.",
   path: "/privacidad",
 });
 
@@ -64,7 +64,7 @@ export default function PrivacidadPage() {
           <Link href="/" className="mb-6 inline-block font-mono text-xs font-semibold uppercase tracking-[0.12em] text-accent">
             ← Inicio
           </Link>
-          <p className="section-label mb-4 text-accent">Legal · Matecito.dev</p>
+          <p className="section-label mb-4 text-accent">Legal · Matecito</p>
           <h1 className="text-[clamp(3rem,7vw,5rem)] font-semibold leading-none tracking-[-0.05em] text-ink">Privacidad</h1>
           <p className="mt-5 max-w-2xl text-sm text-ink-muted">
             Última actualización:{" "}

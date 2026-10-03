@@ -31,15 +31,15 @@ const commitMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Studio digital desde Argentina`,
+    default: `${SITE_NAME} — Creamos. Lanzamos. Hacemos crecer.`,
     template: `%s — ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
   keywords: [
+    "Matecito",
     "studio digital Argentina",
-    "ecosistema digital Argentina",
-    "videojuegos Argentina",
-    "build in public",
+    "productos digitales Argentina",
+    "ecommerce Argentina",
     "software Pergamino",
     "desarrollo web Argentina",
     "landing pages Argentina",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   openGraph: {
-    title: `${SITE_NAME} — Studio digital desde Argentina`,
+    title: `${SITE_NAME} — Creamos. Lanzamos. Hacemos crecer.`,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Studio digital desde Argentina`,
+    title: `${SITE_NAME} — Creamos. Lanzamos. Hacemos crecer.`,
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE.url],
   },

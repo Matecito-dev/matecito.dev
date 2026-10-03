@@ -1,30 +1,43 @@
-# Matecito.dev — Contexto completo
+# Matecito — Contexto del sitio
 
-> Studio digital y servicios web desde Pergamino, Buenos Aires, Argentina.
+> Creamos. Lanzamos. Hacemos crecer. Servicios, productos y proyectos desde Pergamino, Buenos Aires, Argentina.
 
-## Sobre el estudio
+Matecito es la marca principal. `matecito.dev` es su dominio y reúne tres áreas: Studio, Commerce y Proyectos.
 
-Matecito.dev diseña y desarrolla landing pages para profesionales, comercios y emprendimientos. La oferta principal comienza en **$50.000 ARS** e incluye una página responsive, estructura orientada a conversión, SEO base, integración con WhatsApp y publicación en Vercel.
+## Áreas
 
-También ofrece, con cotización según alcance, marketing digital, campañas publicitarias, SEO y contenidos, y automatizaciones. El estudio comparte aprendizajes y procesos en público.
+### Studio
 
-**Ubicación:** Pergamino, Buenos Aires, Argentina  
-**Contacto:** WhatsApp +54 2477 699586  
-**Sitio:** https://matecito.dev
+Servicios digitales para profesionales, comercios y emprendimientos: diseño y desarrollo web, marketing digital, campañas publicitarias, SEO y contenidos, y automatizaciones.
+
+La oferta detallada de landing pages comienza en **$50.000 ARS** e incluye una página responsive, estructura orientada a conversión, SEO base, integración con WhatsApp y publicación en Vercel. Los servicios adicionales se cotizan según el alcance.
+
+### Commerce
+
+Área en preparación para explorar productos y comercio online. Actualmente no hay catálogo ni productos anunciados.
+
+### Proyectos propios
+
+- **Zezen** (`https://www.zezen.app`): plataforma de entrenamiento para organizar rutinas, registrar actividad y seguir el progreso, solo o junto a un gimnasio.
 
 ## Estructura del sitio
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Presentación del studio, servicios y forma de trabajo |
-| `/landing-pages` | Oferta comercial, alcance, proceso y preguntas frecuentes |
-| `/proyectos` | Espacio temporal para próximas novedades |
-| `/labs` | Bitácora de experimentos y aprendizajes |
+| `/` | Presentación de Matecito y las tres áreas |
+| `/studio` | Resumen de los servicios digitales |
+| `/landing-pages` | Oferta, alcance, proceso y preguntas frecuentes |
+| `/commerce` | Presentación de Commerce, en preparación |
+| `/proyectos` | Proyectos propios de Matecito, hoy Zezen |
 | `/privacidad` | Políticas de privacidad de las aplicaciones |
 
-Ruta legacy redirigida: `/estudio` → `/proyectos`
+## Contacto
 
-## Stack técnico del sitio
+- WhatsApp: +54 2477 699586
+- Ubicación: Pergamino, Buenos Aires, Argentina
+- Sitio: https://matecito.dev
+
+## Stack del sitio
 
 - **Framework:** Next.js 16 (App Router)
 - **Estilos:** Tailwind CSS 4
@@ -35,7 +48,3 @@ Ruta legacy redirigida: `/estudio` → `/proyectos`
 
 - GitHub: https://github.com/Matecito-dev/matecito.dev
 - Organización: Matecito-dev
-
-## Nota sobre MatecitoDB
-
-MatecitoDB (BaaS / SDK) fue un producto anterior del ecosistema. La documentación técnica del SDK ya no forma parte de este sitio de marketing.

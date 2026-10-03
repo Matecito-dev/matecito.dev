@@ -39,15 +39,15 @@ export function ContactCta() {
       <div className="page-wrap grid gap-9 py-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:py-20">
         <div>
           <p className="section-label mb-4 text-accent">
-            03 / Contacto
+            Contacto · Matecito
           </p>
           <h2 className="max-w-2xl text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-tight tracking-tight text-ink">
-            ¿Tenés un proyecto
-            {" "}<span className="text-accent">o una idea?</span>
+            ¿Lo hacemos
+            {" "}<span className="text-accent">realidad?</span>
           </h2>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-muted">
-            Escribinos por WhatsApp. Respondemos consultas sobre landing pages,
-            colaboraciones, productos del ecosistema o ideas digitales.
+            Escribinos por WhatsApp para conversar sobre servicios de Studio, una colaboración
+            o cualquiera de las ideas que estamos construyendo en Matecito.
           </p>
         </div>
         <div className="flex flex-col gap-4 md:items-end">
