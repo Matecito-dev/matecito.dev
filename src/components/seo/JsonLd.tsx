@@ -6,7 +6,7 @@ const organization = {
   "@type": "Organization",
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/logos/matecitologo.png`,
+  logo: `${SITE_URL}/icon.png`,
   description:
     "Marca independiente desde Pergamino, Argentina. Creamos, lanzamos y hacemos crecer servicios, productos y proyectos.",
   address: {

@@ -68,9 +68,9 @@ export const metadata: Metadata = {
     images: [OG_IMAGE.url],
   },
   icons: {
-    icon: "/logos/matecitologo.png",
-    shortcut: "/logos/matecitologo.png",
-    apple: "/logos/matecitologo.png",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Code2, MapPin, Rocket, ShoppingBag } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
@@ -51,7 +52,14 @@ export default function Home() {
         <div className="page-wrap grid gap-14 py-16 md:grid-cols-[1.1fr_0.9fr] md:items-center md:py-28">
           <div className="reveal">
             <p className="section-label mb-6 flex items-center gap-3 text-accent">
-              <span className="h-2 w-2 bg-accent" aria-hidden="true" />
+              <Image
+                src="/icon.png"
+                alt=""
+                width={40}
+                height={40}
+                className="h-8 w-8 shrink-0 object-contain"
+                priority
+              />
               Matecito · Pergamino, Argentina
             </p>
             <h1 className="max-w-3xl text-[clamp(2.75rem,6.25vw,5rem)] font-semibold leading-[0.98] tracking-[-0.065em] text-ink">
