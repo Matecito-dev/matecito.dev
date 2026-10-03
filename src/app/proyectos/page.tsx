@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                   </div>
                   <h2
                     id={`${project.id}-title`}
-                    className="max-w-2xl text-[clamp(2.5rem,5vw,4rem)] font-semibold leading-[0.98] tracking-[-0.06em] text-ink"
+                    className="sr-only"
                   >
                     {project.title}
                   </h2>
