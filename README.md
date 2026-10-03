@@ -21,9 +21,9 @@ Abrí [http://localhost:3000](http://localhost:3000).
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Home del studio y sus proyectos |
+| `/` | Home del studio, servicios y forma de trabajo |
 | `/landing-pages` | Servicio de landing pages desde $50.000 ARS |
-| `/proyectos` | Portfolio del ecosistema |
+| `/proyectos` | Espacio temporal para próximas novedades |
 | `/labs` | Bitácora de experimentos |
 | `/privacidad` | Políticas de privacidad |
 

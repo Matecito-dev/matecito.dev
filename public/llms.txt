@@ -6,9 +6,9 @@ Matecito.dev crea landing pages rápidas, responsive y orientadas a generar cons
 
 ## Páginas principales
 
-- [Inicio](https://matecito.dev/): Presentación del studio y sus proyectos
+- [Inicio](https://matecito.dev/): Presentación del studio y sus servicios
 - [Landing pages](https://matecito.dev/landing-pages): Oferta, precio, alcance y preguntas frecuentes
-- [Proyectos](https://matecito.dev/proyectos): Portfolio del ecosistema
+- [Proyectos](https://matecito.dev/proyectos): Espacio temporal para próximas novedades
 - [Labs](https://matecito.dev/labs): Bitácora de experimentos e infraestructura
 - [Privacidad](https://matecito.dev/privacidad): Políticas de privacidad
 
@@ -26,4 +26,4 @@ Matecito.dev crea landing pages rápidas, responsive y orientadas a generar cons
 
 ## Documentación extendida
 
-- [llms-full.txt](https://matecito.dev/llms-full.txt): Contexto ampliado del studio, servicios y proyectos
+- [llms-full.txt](https://matecito.dev/llms-full.txt): Contexto ampliado del studio y sus servicios

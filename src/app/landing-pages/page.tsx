@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   ArrowRight,
   BadgeCheck,
@@ -90,9 +89,8 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_JSON_LD) }}
       />
-      <section className="relative overflow-hidden border-b-2 border-ink bg-paper">
-        <div className="hero-grid pointer-events-none absolute inset-0 opacity-55" />
-        <div className="page-wrap relative grid gap-12 py-16 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-24 lg:py-28">
+      <section className="border-b border-line bg-surface">
+        <div className="page-wrap grid gap-12 py-16 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-24 lg:py-28">
           <div className="reveal">
             <p className="section-label mb-5 text-accent">
               Diseño y desarrollo web · Argentina
@@ -107,7 +105,7 @@ export default function Home() {
               <strong className="font-semibold text-ink"> $50.000 ARS.</strong>
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <WhatsAppButton className="justify-center !bg-accent hover:!bg-[#6f1130]">
+              <WhatsAppButton className="justify-center">
                 Quiero mi landing
               </WhatsAppButton>
               <a href="#incluye" className="btn-ghost justify-center">
@@ -122,8 +120,8 @@ export default function Home() {
           </div>
 
           <div className="reveal reveal-delay-1">
-            <div className="relative rounded-[2rem] border-2 border-ink bg-surface p-7 shadow-[9px_9px_0_0_var(--ink)] md:p-9">
-              <span className="absolute -right-3 -top-3 rotate-3 rounded-full bg-accent px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-widest text-white">
+            <div className="relative border border-line bg-surface p-7 md:p-9">
+              <span className="mb-5 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-accent">
                 Precio lanzamiento
               </span>
               <p className="section-label mb-5">Tu landing profesional</p>
@@ -136,7 +134,7 @@ export default function Home() {
               <ul className="mt-6 space-y-3">
                 {INCLUDED.slice(0, 5).map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-ink-muted">
-                    <span className="mt-0.5 rounded-full bg-accent-soft p-1 text-accent">
+                    <span className="mt-0.5 bg-accent-soft p-1 text-accent">
                       <Check className="h-3.5 w-3.5" strokeWidth={3} />
                     </span>
                     {item}
@@ -147,7 +145,7 @@ export default function Home() {
                 href={LANDING_WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-5 py-3.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+                className="btn-whatsapp mt-7 w-full"
               >
                 Consultar disponibilidad
                 <MessageCircle className="h-4 w-4" />
@@ -157,8 +155,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-label="Características principales" className="border-b border-line bg-ink text-white">
-        <div className="page-wrap grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
+      <section aria-label="Características principales" className="border-b border-line bg-paper-warm">
+        <div className="page-wrap grid grid-cols-2 divide-x divide-line md:grid-cols-4">
           {[
             [Smartphone, "100% responsive"],
             [Search, "SEO base"],
@@ -169,7 +167,7 @@ export default function Home() {
             return (
               <div key={label as string} className="flex items-center gap-3 px-3 py-5 md:justify-center">
                 <FeatureIcon className="h-4 w-4 shrink-0 text-accent" />
-                <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-white/80 sm:text-xs">
+                <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-ink-muted sm:text-xs">
                   {label as string}
                 </span>
               </div>
@@ -216,9 +214,9 @@ export default function Home() {
                 body: "Base rápida y escalable para sumar analítica, campañas, formularios o nuevas páginas.",
               },
             ].map(({ icon: Icon, number, title, body }) => (
-              <article key={number} className="rounded-[1.5rem] border border-line-strong bg-surface p-7">
+              <article key={number} className="border border-line bg-surface p-7">
                 <div className="flex items-center justify-between">
-                  <span className="rounded-2xl bg-accent-soft p-3 text-accent">
+                  <span className="bg-accent-soft p-3 text-accent">
                     <Icon className="h-5 w-5" />
                   </span>
                   <span className="font-mono text-xs font-bold text-ink-faint">{number}</span>
@@ -231,7 +229,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="incluye" className="scroll-mt-20 border-y-2 border-ink bg-surface py-20 md:py-28">
+      <section id="incluye" className="scroll-mt-20 border-y border-line bg-surface py-20 md:py-28">
         <div className="page-wrap grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="section-label mb-4">Paquete landing</p>
@@ -244,12 +242,12 @@ export default function Home() {
               Una solución concreta para profesionales, comercios y emprendimientos que
               necesitan una presencia online seria y enfocada en conseguir consultas.
             </p>
-            <p className="mt-7 inline-flex rounded-full border border-line-strong bg-paper px-4 py-2 font-mono text-xs text-ink-muted">
+            <p className="mt-7 inline-flex border border-line bg-paper px-4 py-2 font-mono text-xs text-ink-muted">
               El dominio y servicios pagos de terceros no están incluidos.
             </p>
           </div>
 
-          <div className="rounded-[2rem] bg-paper-warm p-7 md:p-9">
+          <div className="border border-line bg-paper-warm p-7 md:p-9">
             <ul className="grid gap-4">
               {INCLUDED.map((item) => (
                 <li key={item} className="flex items-start gap-3 border-b border-line-strong pb-4 last:border-0 last:pb-0">
@@ -258,7 +256,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex flex-col gap-4 border-t-2 border-ink pt-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="mt-8 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-ink-faint">Inversión</p>
                 <p className="mt-1 text-4xl font-bold text-ink">$50.000 <span className="font-mono text-xs">ARS</span></p>
@@ -283,51 +281,13 @@ export default function Home() {
               ["02", "Diseñamos y construimos", "Definimos el mensaje, diseñamos la experiencia y desarrollamos la página."],
               ["03", "Revisamos y publicamos", "Ajustamos los detalles, conectamos tu dominio y dejamos la landing online."],
             ].map(([number, title, body]) => (
-              <li key={number} className="relative border-t-2 border-ink pt-6">
+              <li key={number} className="relative border-t border-line pt-6">
                 <span className="font-mono text-xs font-bold text-accent">{number}</span>
                 <h3 className="mt-5 text-2xl font-bold text-ink">{title}</h3>
                 <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-muted">{body}</p>
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      <section className="border-y border-line bg-surface py-20 md:py-28">
-        <div className="page-wrap grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-center">
-          <div>
-            <p className="section-label mb-4">Trabajo real</p>
-            <h2 className="text-4xl font-bold tracking-tight text-ink md:text-5xl">
-              También construimos nuestros propios productos.
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-ink-muted">
-              Aplicamos en proyectos propios lo que ofrecemos: estrategia, diseño,
-              desarrollo y mejora continua.
-            </p>
-            <Link href="/proyectos" className="btn-ghost mt-7">
-              Conocer proyectos
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-          <a
-            href="https://recienllegue.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-[2rem] border-2 border-ink bg-[#e8f2ef] p-8 shadow-[7px_7px_0_0_var(--accent)] transition-transform hover:-translate-y-1 md:p-10"
-          >
-            <div className="flex items-center justify-between">
-              <span className="text-5xl" aria-hidden>🌎</span>
-              <span className="badge-live">Proyecto online</span>
-            </div>
-            <p className="section-label mt-12">Plataforma local</p>
-            <h3 className="mt-2 text-3xl font-bold text-ink md:text-4xl">Recién Llegué</h3>
-            <p className="mt-3 max-w-lg text-ink-muted">
-              Recursos y comunidad para ayudar a las personas a adaptarse a una nueva ciudad.
-            </p>
-            <span className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-accent">
-              Visitar proyecto <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </span>
-          </a>
         </div>
       </section>
 
@@ -352,7 +312,7 @@ export default function Home() {
             ].map(([Icon, service]) => {
               const ServiceIcon = Icon as typeof Megaphone;
               return (
-                <div key={service as string} className="flex items-center gap-4 rounded-2xl border border-line-strong bg-surface p-5">
+                <div key={service as string} className="flex items-center gap-4 border border-line bg-surface p-5">
                   <ServiceIcon className="h-5 w-5 shrink-0 text-accent" />
                   <span className="font-semibold text-ink">{service as string}</span>
                 </div>

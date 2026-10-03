@@ -24,6 +24,7 @@ export const LANDING_WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${enc
   "Hola, quiero consultar por la landing page de $50.000 ARS"
 )}`;
 
+// Archived while the public portfolio is paused; kept for the next site iteration.
 export const PROJECTS: Project[] = [
   {
     id: "recienllegue",
@@ -85,12 +86,6 @@ export const LAB_NOTES = [
     title: "Infra unificada en VPS",
     body: "Migración a un solo servidor con Caddy, systemd y despliegues por proyecto.",
     tag: "DevOps",
-  },
-  {
-    date: "May 2026",
-    title: "Digital Front / AVPS",
-    body: "Backend del MMORTS con tiles, Redis y despliegue en producción.",
-    tag: "Juego",
   },
   {
     date: "Abr 2026",

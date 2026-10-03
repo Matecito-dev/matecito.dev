@@ -1,12 +1,12 @@
 # Matecito.dev — Contexto completo
 
-> Landing pages profesionales y soluciones digitales desde Pergamino, Buenos Aires, Argentina.
+> Studio digital y servicios web desde Pergamino, Buenos Aires, Argentina.
 
-## Sobre el studio
+## Sobre el estudio
 
-Matecito.dev es un studio digital que diseña y desarrolla landing pages para profesionales, comercios y emprendimientos. La oferta principal comienza en **$50.000 ARS** e incluye una página responsive, estructura orientada a conversión, SEO base, integración con WhatsApp y publicación en Vercel.
+Matecito.dev diseña y desarrolla landing pages para profesionales, comercios y emprendimientos. La oferta principal comienza en **$50.000 ARS** e incluye una página responsive, estructura orientada a conversión, SEO base, integración con WhatsApp y publicación en Vercel.
 
-También ofrece, con cotización según alcance, marketing digital, campañas publicitarias, SEO y contenidos, y automatizaciones. El studio mantiene proyectos propios y documenta parte de su proceso bajo el enfoque **build in public**.
+También ofrece, con cotización según alcance, marketing digital, campañas publicitarias, SEO y contenidos, y automatizaciones. El estudio comparte aprendizajes y procesos en público.
 
 **Ubicación:** Pergamino, Buenos Aires, Argentina  
 **Contacto:** WhatsApp +54 2477 699586  
@@ -16,38 +16,19 @@ También ofrece, con cotización según alcance, marketing digital, campañas pu
 
 | Ruta | Descripción |
 |------|-------------|
-| `/` | Home del studio, sus proyectos y servicios destacados |
-| `/landing-pages` | Oferta comercial con precio, alcance, proceso, portfolio y preguntas frecuentes |
-| `/proyectos` | Portfolio detallado de cada frente del ecosistema |
-| `/labs` | Bitácora de experimentos: infra, juegos, IA y procesos |
+| `/` | Presentación del studio, servicios y forma de trabajo |
+| `/landing-pages` | Oferta comercial, alcance, proceso y preguntas frecuentes |
+| `/proyectos` | Espacio temporal para próximas novedades |
+| `/labs` | Bitácora de experimentos y aprendizajes |
 | `/privacidad` | Políticas de privacidad de las aplicaciones |
 
-Rutas legacy redirigidas: `/estudio` → `/proyectos`
-
-## Proyectos
-
-### Recién Llegué (Live)
-- **Tipo:** Plataforma local / comunidad
-- **URL:** https://recienllegue.com
-- **Descripción:** Ayuda a personas que llegan a una ciudad nueva con recursos, orientación y comunidad local. Primer foco: Pergamino.
-
-### ZeroLagARG (WIP)
-- **Tipo:** Gaming hub / comunidad
-- **Descripción:** Comunidad gaming argentina con servidores de Minecraft y MU Online, foro y eventos.
-
-### Conquest of Etheria (WIP)
-- **Tipo:** Videojuego de estrategia
-- **Descripción:** Estrategia medieval con mapa mundial, facciones y economía en tiempo real. Backend conocido como Digital Front / AVPS.
-
-### Labs (WIP)
-- **Tipo:** Experimentos del studio
-- **Descripción:** IA, DevOps, scripts y prototipos antes de convertirse en producto. Bitácora abierta en `/labs`.
+Ruta legacy redirigida: `/estudio` → `/proyectos`
 
 ## Stack técnico del sitio
 
 - **Framework:** Next.js 16 (App Router)
 - **Estilos:** Tailwind CSS 4
-- **Deploy:** VPS con Caddy
+- **Deploy:** Vercel
 - **Analytics:** Google Analytics (G-0Z1TBB6SX2)
 
 ## Repositorio
@@ -57,4 +38,4 @@ Rutas legacy redirigidas: `/estudio` → `/proyectos`
 
 ## Nota sobre MatecitoDB
 
-MatecitoDB (BaaS / SDK) fue un producto anterior del ecosistema. La documentación técnica del SDK ya no forma parte de este sitio de marketing. El studio se reposicionó como ecosistema de proyectos digitales (comunidades, juegos, productos).
+MatecitoDB (BaaS / SDK) fue un producto anterior del ecosistema. La documentación técnica del SDK ya no forma parte de este sitio de marketing.

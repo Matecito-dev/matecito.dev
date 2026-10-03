@@ -61,11 +61,12 @@ export default function PrivacidadPage() {
     <>
       <section className="border-b border-line bg-surface">
         <div className="page-wrap py-16 md:py-20">
-          <Link href="/" className="mb-6 inline-block font-mono text-xs font-bold uppercase tracking-widest text-accent">
+          <Link href="/" className="mb-6 inline-block font-mono text-xs font-semibold uppercase tracking-[0.12em] text-accent">
             ← Inicio
           </Link>
-          <h1 className="text-4xl font-bold tracking-tight text-ink md:text-5xl">Privacidad</h1>
-          <p className="mt-4 max-w-2xl text-sm text-ink-muted">
+          <p className="section-label mb-4 text-accent">Legal · Matecito.dev</p>
+          <h1 className="text-[clamp(3rem,7vw,5rem)] font-semibold leading-none tracking-[-0.05em] text-ink">Privacidad</h1>
+          <p className="mt-5 max-w-2xl text-sm text-ink-muted">
             Última actualización:{" "}
             {new Date().toLocaleDateString("es-AR", { year: "numeric", month: "long", day: "numeric" })}
           </p>
@@ -76,13 +77,13 @@ export default function PrivacidadPage() {
         <div className="max-w-3xl space-y-16">
           {apps.map((app) => (
             <div key={app.name}>
-              <h2 className="text-2xl font-bold text-ink">{app.name}</h2>
+              <h2 className="border-b border-line pb-3 text-2xl font-semibold tracking-tight text-ink">{app.name}</h2>
               <p className="mt-2 text-sm text-ink-muted">{app.description}</p>
               <div className="mt-8 space-y-8">
                 {app.sections.map((section) => (
                   <div key={section.title}>
                     <h3 className="section-label mb-3">{section.title}</h3>
-                    <div className="rounded-2xl border-2 border-line bg-paper-warm p-6">
+                    <div className="border-l-2 border-accent bg-paper-warm px-5 py-5">
                       {renderContent(section.content)}
                     </div>
                   </div>
@@ -110,7 +111,7 @@ export default function PrivacidadPage() {
               ].map((item) => (
                 <div key={item.title}>
                   <h3 className="section-label mb-3">{item.title}</h3>
-                  <div className="rounded-2xl border-2 border-line bg-paper-warm p-6">
+                  <div className="border-l-2 border-line-strong bg-paper-warm px-5 py-5">
                     <p className="text-sm leading-relaxed text-ink-muted">{item.content}</p>
                   </div>
                 </div>

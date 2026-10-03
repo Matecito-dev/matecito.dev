@@ -8,7 +8,7 @@ const organization = {
   url: SITE_URL,
   logo: `${SITE_URL}/logos/matecitologo.png`,
   description:
-    "Studio digital desde Pergamino, Argentina. Comunidades, videojuegos, productos digitales y servicios web.",
+    "Studio digital desde Pergamino, Argentina. Diseño web, soluciones digitales y experimentación en público.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Pergamino",
@@ -22,7 +22,7 @@ const organization = {
     url: WHATSAPP_URL,
     availableLanguage: ["Spanish"],
   },
-  sameAs: ["https://recienllegue.com"],
+  sameAs: ["https://github.com/Matecito-dev"],
 };
 
 const website = {
@@ -31,7 +31,7 @@ const website = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Ecosistema de proyectos digitales desde Argentina: plataformas locales, gaming, juegos y servicios web.",
+    "Studio digital desde Argentina: diseño web, soluciones digitales y experimentación en público.",
   inLanguage: "es-AR",
   publisher: {
     "@type": "Organization",

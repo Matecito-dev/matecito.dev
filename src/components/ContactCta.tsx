@@ -35,25 +35,24 @@ export function WhatsAppButton({
 
 export function ContactCta() {
   return (
-    <section className="border-t-2 border-ink bg-ink text-surface">
-      <div className="page-wrap grid gap-10 py-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:py-20">
+    <section className="border-t border-line bg-surface">
+      <div className="page-wrap grid gap-9 py-16 md:grid-cols-[1.2fr_0.8fr] md:items-center md:py-20">
         <div>
-          <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.25em] text-white/50">
-            Contacto
+          <p className="section-label mb-4 text-accent">
+            03 / Contacto
           </p>
-          <h2 className="text-[clamp(2rem,5vw,3.25rem)] font-bold leading-tight tracking-tight">
+          <h2 className="max-w-2xl text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-tight tracking-tight text-ink">
             ¿Tenés un proyecto
-            <br />
-            <span className="text-accent">o una idea?</span>
+            {" "}<span className="text-accent">o una idea?</span>
           </h2>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-white/70">
+          <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-muted">
             Escribinos por WhatsApp. Respondemos consultas sobre landing pages,
             colaboraciones, productos del ecosistema o ideas digitales.
           </p>
         </div>
         <div className="flex flex-col gap-4 md:items-end">
           <WhatsAppButton />
-          <p className="font-mono text-xs text-white/40 md:text-right">
+          <p className="font-mono text-xs text-ink-faint md:text-right">
             +54 2477 699586 · Pergamino, AR
           </p>
         </div>
